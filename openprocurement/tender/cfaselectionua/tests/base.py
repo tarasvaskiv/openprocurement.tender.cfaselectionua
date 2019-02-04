@@ -36,6 +36,7 @@ with open(os.path.join(here, 'data/bids.json')) as _in:
 now = datetime.now(TZ)
 test_procuringEntity = test_organization.copy()
 test_procuringEntity["kind"] = "general"
+del test_procuringEntity["scale"]
 
 test_items[0]['id'] = test_agreement['items'][0]['id']
 test_items[0]['deliveryDate'] = {"startDate": (now + timedelta(days=2)).isoformat(),
