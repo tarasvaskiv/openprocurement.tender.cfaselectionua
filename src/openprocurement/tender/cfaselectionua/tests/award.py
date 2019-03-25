@@ -2,6 +2,7 @@
 import unittest
 from copy import deepcopy
 
+
 from openprocurement.api.tests.base import snitch
 from openprocurement.tender.cfaselectionua.adapters.configurator import TenderCfaSelectionUAConfigurator
 from openprocurement.tender.cfaselectionua.tests.base import (
